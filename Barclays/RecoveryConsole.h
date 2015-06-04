@@ -10,4 +10,8 @@
 
 @interface RecoveryConsole : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextField *customerName;
+@property (weak, nonatomic) IBOutlet UITextField *recoveryAddress;
+@property (weak, nonatomic) IBOutlet UITextField *bankAccountNumber;
+
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "CustomerZone.h"
 #import <Parse/Parse.h>
 
 @interface ViewController ()
@@ -18,7 +19,7 @@
 - (void)viewDidLoad {
     PFUser *currentUser = [PFUser currentUser];
     if (currentUser) {
-        [self performSegueWithIdentifier:@"RegistrationConsole" sender:nil];
+        //[self performSegueWithIdentifier:@"customerAccount" sender:self];
         NSLog(@"Authorized access!");
     } else {
         NSLog(@"Not authorized access!");
@@ -30,6 +31,8 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Barclays Bank" message:@"You don't have memory for work with bank account. Please restart your phone!" delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
+    [alert show];
     // Dispose of any resources that can be recreated.
 }
 
@@ -39,7 +42,7 @@
     [PFUser logInWithUsernameInBackground:self.username.text password:self.password.text
                                     block:^(PFUser *user, NSError *error) {
                                         if (user) {
-                                            [self performSegueWithIdentifier:@"authVision" sender:nil];
+                                            [self performSegueWithIdentifier:@"customerAccount" sender:nil];
                                         } else {
                                             UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Top Scan" message:@"Sorry. You enter incorrect account details or your account is not valid. Please check credentials and try again!" delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil, nil];
                                             [alertView show];

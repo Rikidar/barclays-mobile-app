@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6724" systemVersion="14E26a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E26a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
         <!--Registration Console-->
@@ -135,6 +135,9 @@
                                 <state key="normal" image="done_button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="resetCustomerPassword:" destination="ez2-cy-5id" eventType="touchUpInside" id="4fx-ai-K9O"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="johny@barclays.co.uk" textAlignment="center" minimumFontSize="17" background="email_field" translatesAutoresizingMaskIntoConstraints="NO" id="5wQ-zi-Nx5">
                                 <rect key="frame" x="16" y="415" width="343" height="55"/>
@@ -162,6 +165,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="XWc-uu-Vkd"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="bankAccountNumber" destination="Bvp-cw-arU" id="UDz-n2-MBo"/>
+                        <outlet property="customerName" destination="YUn-R9-AYz" id="duN-pz-Vyg"/>
+                        <outlet property="recoveryAddress" destination="5wQ-zi-Nx5" id="e4q-yM-U0A"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N3q-mr-CIw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -185,7 +193,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="authWithCredentials:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="xzx-pb-l2A"/>
+                                    <action selector="authWithCredentials:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="sFP-WC-yp8"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="header_bg" translatesAutoresizingMaskIntoConstraints="NO" id="VzT-aX-SZC">
@@ -236,17 +244,17 @@
                     <connections>
                         <outlet property="password" destination="zpl-iQ-j5d" id="z4R-Bv-jRk"/>
                         <outlet property="username" destination="Z2i-vW-Y06" id="fVQ-H8-3K3"/>
-                        <segue destination="5jZ-Zw-uiE" kind="push" identifier="authVision" id="KzV-fA-UXE"/>
+                        <segue destination="5jZ-Zw-uiE" kind="push" identifier="customerAccount" id="hwy-UA-7Hr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="945.5" y="-442.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Customer Zone-->
         <scene sceneID="5yl-iU-Dev">
             <objects>
-                <viewController id="5jZ-Zw-uiE" sceneMemberID="viewController">
+                <viewController id="5jZ-Zw-uiE" customClass="CustomerZone" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="uOg-zL-khK"/>
                         <viewControllerLayoutGuide type="bottom" id="V0z-uK-TFB"/>
@@ -254,14 +262,47 @@
                     <view key="view" contentMode="scaleToFill" id="Grl-Bf-7OA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="header_bg" translatesAutoresizingMaskIntoConstraints="NO" id="aom-QR-G62">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="267"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mark_image" translatesAutoresizingMaskIntoConstraints="NO" id="Auv-wb-dbf">
+                                <rect key="frame" x="137" y="196" width="100" height="100"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="£ 0.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jju-Ls-Ssl">
+                                <rect key="frame" x="20" y="93" width="334" height="81"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="60"/>
+                                <color key="textColor" red="0.97242277899999996" green="0.98654294050000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.97242277899999996" green="0.98654294050000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="USD: 37291 | EUR:38281" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTZ-Ge-DZp">
+                                <rect key="frame" x="93" y="164" width="188" height="24"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g76-SL-enT">
+                                <rect key="frame" x="334" y="34" width="25" height="25"/>
+                                <state key="normal" image="logout_button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="logOutEvent:" destination="5jZ-Zw-uiE" eventType="touchUpInside" id="fyz-Od-Jn4"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="5Gd-pa-caS"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="currentIntlBallance" destination="NTZ-Ge-DZp" id="I6Q-qZ-Xux"/>
+                        <outlet property="currentLocalBallance" destination="Jju-Ls-Ssl" id="hIE-1a-AqN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ixo-hE-aH8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1420.5" y="-442.5"/>
+            <point key="canvasLocation" x="1619.5" y="-442.5"/>
         </scene>
     </scenes>
     <resources>
@@ -270,6 +311,7 @@
         <image name="email_field" width="1304" height="200"/>
         <image name="header_bg" width="1500" height="1040"/>
         <image name="login_button" width="1950" height="330"/>
+        <image name="logout_button" width="80" height="84"/>
         <image name="mark_image" width="400" height="400"/>
         <image name="name_filed" width="1304" height="196"/>
         <image name="password_field" width="1304" height="200"/>

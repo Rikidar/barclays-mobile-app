@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F6054D71B20E0B500F6F4A4 /* CustomerZone.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6054D61B20E0B500F6F4A4 /* CustomerZone.m */; };
 		6FE41CA71B205F2C00992E5A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE41CA61B205F2C00992E5A /* main.m */; };
 		6FE41CAA1B205F2C00992E5A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE41CA91B205F2C00992E5A /* AppDelegate.m */; };
 		6FE41CAD1B205F2C00992E5A /* Barclays.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6FE41CAB1B205F2C00992E5A /* Barclays.xcdatamodeld */; };
@@ -44,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6F6054D51B20E0B500F6F4A4 /* CustomerZone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerZone.h; sourceTree = "<group>"; };
+		6F6054D61B20E0B500F6F4A4 /* CustomerZone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerZone.m; sourceTree = "<group>"; };
 		6FE41CA11B205F2C00992E5A /* Barclays.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Barclays.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FE41CA51B205F2C00992E5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6FE41CA61B205F2C00992E5A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -187,6 +190,8 @@
 				6FE41CD21B20710E00992E5A /* RegistrationConsole.m */,
 				6FE41CD41B20712200992E5A /* RecoveryConsole.h */,
 				6FE41CD51B20712200992E5A /* RecoveryConsole.m */,
+				6F6054D51B20E0B500F6F4A4 /* CustomerZone.h */,
+				6F6054D61B20E0B500F6F4A4 /* CustomerZone.m */,
 			);
 			name = "Source Code";
 			sourceTree = "<group>";
@@ -318,6 +323,7 @@
 				6FE41CD61B20712200992E5A /* RecoveryConsole.m in Sources */,
 				6FE41CB01B205F2C00992E5A /* ViewController.m in Sources */,
 				6FE41CD31B20710E00992E5A /* RegistrationConsole.m in Sources */,
+				6F6054D71B20E0B500F6F4A4 /* CustomerZone.m in Sources */,
 				6FE41CA71B205F2C00992E5A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -531,6 +537,7 @@
 				6FE41CC91B205F2C00992E5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6FE41CCA1B205F2C00992E5A /* Build configuration list for PBXNativeTarget "BarclaysTests" */ = {
 			isa = XCConfigurationList;
@@ -539,6 +546,7 @@
 				6FE41CCC1B205F2C00992E5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
