@@ -456,6 +456,7 @@
 					"$(PROJECT_DIR)/Parse",
 				);
 				INFOPLIST_FILE = Barclays/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -475,6 +476,7 @@
 					"$(PROJECT_DIR)/Parse",
 				);
 				INFOPLIST_FILE = Barclays/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

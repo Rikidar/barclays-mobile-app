@@ -17,6 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self requestBallanceUpdateAction];
     // Do any additional setup after loading the view.
 }
 
@@ -26,16 +27,19 @@
 }
 
 - (IBAction)logOutEvent:(id)sender {
-    [PFUser logOut];
-    PFUser *currentUser = [PFUser currentUser];
-    [self prepareForSegue:@"authScreen" sender:nil];
+    [self prepareForSegue:@"homeScreen" sender:self];
+    [PFUser logOutInBackground];
 }
 
 - (void)requestBallanceUpdateAction {
+    
+    
     PFUser *currentUser = [PFUser currentUser];
     PFQuery *query = [PFQuery queryWithClassName:@"BCAccounts"];
-    [query getObjectInBackgroundWithId:@"ffff" block:^(PFObject *customerEvent, NSError *error) {
-        // Do something with the returned PFObject in the gameScore variable.
+    [query getObjectInBackgroundWithId:@"ogZnUZutzQ" block:^(PFObject *customerEvent, NSError *error) {
+       // self.currentLocalBallance.text = customerEvent[@"accountCredit"];
+        NSString *accountBallance = customerEvent[@"accountCredit"];
+        self.currentLocalBallance.text = (@"£ %@", accountBallance);
         NSLog(@"%@", customerEvent);
     }];
 }

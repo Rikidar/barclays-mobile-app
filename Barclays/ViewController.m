@@ -19,8 +19,8 @@
 - (void)viewDidLoad {
     PFUser *currentUser = [PFUser currentUser];
     if (currentUser) {
-        //[self performSegueWithIdentifier:@"customerAccount" sender:self];
         NSLog(@"Authorized access!");
+        [self performSegueWithIdentifier:@"customerAccount" sender:nil];
     } else {
         NSLog(@"Not authorized access!");
     }
