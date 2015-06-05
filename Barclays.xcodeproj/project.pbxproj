@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6F6054D71B20E0B500F6F4A4 /* CustomerZone.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6054D61B20E0B500F6F4A4 /* CustomerZone.m */; };
+		6FC414431B222BCF00669669 /* TransactionList.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FC414421B222BCF00669669 /* TransactionList.m */; };
 		6FE41CA71B205F2C00992E5A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE41CA61B205F2C00992E5A /* main.m */; };
 		6FE41CAA1B205F2C00992E5A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE41CA91B205F2C00992E5A /* AppDelegate.m */; };
 		6FE41CAD1B205F2C00992E5A /* Barclays.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6FE41CAB1B205F2C00992E5A /* Barclays.xcdatamodeld */; };
@@ -32,6 +33,10 @@
 		6FE41D051B20745900992E5A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FE41D041B20745900992E5A /* SystemConfiguration.framework */; };
 		6FE41D071B20746200992E5A /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FE41D061B20746200992E5A /* libsqlite3.dylib */; };
 		6FE41D091B20747B00992E5A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FE41D081B20747B00992E5A /* libz.dylib */; };
+		6FED566D1B218CD80052C086 /* CreditCardScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FED566C1B218CD80052C086 /* CreditCardScanner.m */; };
+		6FED56701B218CE70052C086 /* SettingsSpring.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FED566F1B218CE70052C086 /* SettingsSpring.m */; };
+		6FEFEB791B220E0A00CCE3EB /* AboutApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FEFEB781B220E0A00CCE3EB /* AboutApplication.m */; };
+		6FEFEB7C1B220F2000CCE3EB /* PaymentGateway.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FEFEB7B1B220F2000CCE3EB /* PaymentGateway.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,8 @@
 /* Begin PBXFileReference section */
 		6F6054D51B20E0B500F6F4A4 /* CustomerZone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerZone.h; sourceTree = "<group>"; };
 		6F6054D61B20E0B500F6F4A4 /* CustomerZone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerZone.m; sourceTree = "<group>"; };
+		6FC414411B222BCF00669669 /* TransactionList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransactionList.h; sourceTree = "<group>"; };
+		6FC414421B222BCF00669669 /* TransactionList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransactionList.m; sourceTree = "<group>"; };
 		6FE41CA11B205F2C00992E5A /* Barclays.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Barclays.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FE41CA51B205F2C00992E5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6FE41CA61B205F2C00992E5A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -79,6 +86,14 @@
 		6FE41D041B20745900992E5A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		6FE41D061B20746200992E5A /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		6FE41D081B20747B00992E5A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		6FED566B1B218CD80052C086 /* CreditCardScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreditCardScanner.h; sourceTree = "<group>"; };
+		6FED566C1B218CD80052C086 /* CreditCardScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreditCardScanner.m; sourceTree = "<group>"; };
+		6FED566E1B218CE70052C086 /* SettingsSpring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsSpring.h; sourceTree = "<group>"; };
+		6FED566F1B218CE70052C086 /* SettingsSpring.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsSpring.m; sourceTree = "<group>"; };
+		6FEFEB771B220E0A00CCE3EB /* AboutApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutApplication.h; sourceTree = "<group>"; };
+		6FEFEB781B220E0A00CCE3EB /* AboutApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutApplication.m; sourceTree = "<group>"; };
+		6FEFEB7A1B220F2000CCE3EB /* PaymentGateway.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentGateway.h; sourceTree = "<group>"; };
+		6FEFEB7B1B220F2000CCE3EB /* PaymentGateway.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentGateway.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +207,16 @@
 				6FE41CD51B20712200992E5A /* RecoveryConsole.m */,
 				6F6054D51B20E0B500F6F4A4 /* CustomerZone.h */,
 				6F6054D61B20E0B500F6F4A4 /* CustomerZone.m */,
+				6FED566B1B218CD80052C086 /* CreditCardScanner.h */,
+				6FED566C1B218CD80052C086 /* CreditCardScanner.m */,
+				6FED566E1B218CE70052C086 /* SettingsSpring.h */,
+				6FED566F1B218CE70052C086 /* SettingsSpring.m */,
+				6FEFEB771B220E0A00CCE3EB /* AboutApplication.h */,
+				6FEFEB781B220E0A00CCE3EB /* AboutApplication.m */,
+				6FEFEB7A1B220F2000CCE3EB /* PaymentGateway.h */,
+				6FEFEB7B1B220F2000CCE3EB /* PaymentGateway.m */,
+				6FC414411B222BCF00669669 /* TransactionList.h */,
+				6FC414421B222BCF00669669 /* TransactionList.m */,
 			);
 			name = "Source Code";
 			sourceTree = "<group>";
@@ -318,13 +343,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FEFEB791B220E0A00CCE3EB /* AboutApplication.m in Sources */,
 				6FE41CAD1B205F2C00992E5A /* Barclays.xcdatamodeld in Sources */,
+				6FC414431B222BCF00669669 /* TransactionList.m in Sources */,
 				6FE41CAA1B205F2C00992E5A /* AppDelegate.m in Sources */,
 				6FE41CD61B20712200992E5A /* RecoveryConsole.m in Sources */,
+				6FEFEB7C1B220F2000CCE3EB /* PaymentGateway.m in Sources */,
 				6FE41CB01B205F2C00992E5A /* ViewController.m in Sources */,
 				6FE41CD31B20710E00992E5A /* RegistrationConsole.m in Sources */,
+				6FED566D1B218CD80052C086 /* CreditCardScanner.m in Sources */,
 				6F6054D71B20E0B500F6F4A4 /* CustomerZone.m in Sources */,
 				6FE41CA71B205F2C00992E5A /* main.m in Sources */,
+				6FED56701B218CE70052C086 /* SettingsSpring.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,5 +12,6 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *currentLocalBallance;
 @property (weak, nonatomic) IBOutlet UILabel *currentIntlBallance;
+@property (weak, nonatomic) IBOutlet UIImageView *profileImage;
 
 @end

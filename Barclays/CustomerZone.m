@@ -15,9 +15,12 @@
 
 @implementation CustomerZone
 
+@synthesize profileImage;
+
 - (void)viewDidLoad {
+    [self loadCustomerProfileImage];
     [super viewDidLoad];
-    [self requestBallanceUpdateAction];
+  //  [self requestBallanceUpdateAction];
     // Do any additional setup after loading the view.
 }
 
@@ -32,21 +35,34 @@
 }
 
 - (void)requestBallanceUpdateAction {
-    
-    
     PFUser *currentUser = [PFUser currentUser];
     PFQuery *query = [PFQuery queryWithClassName:@"BCAccounts"];
     [query getObjectInBackgroundWithId:@"ogZnUZutzQ" block:^(PFObject *customerEvent, NSError *error) {
-       // self.currentLocalBallance.text = customerEvent[@"accountCredit"];
-        NSString *accountBallance = customerEvent[@"accountCredit"];
-        self.currentLocalBallance.text = (@"£ %@", accountBallance);
+        NSString *currentBallance = customerEvent[@"accountCredit"];
         NSLog(@"%@", customerEvent);
     }];
 }
 
-- (void)requestWithObject {
-    
+- (void)loadCustomerProfileImage {
+    PFQuery *query = [PFQuery queryWithClassName:@"BCAccounts"];
+    [query getObjectInBackgroundWithId:@"ogZnUZutzQ" block:^(PFObject *object, NSError *error) {
+        NSLog(@"Retrieved data");
+        self.currentLocalBallance.text = object[@"BANumber"];
+        if (!error) {
+            PFFile *file = [object objectForKey:@"customerImage"];
+            [file getDataInBackgroundWithBlock:^(NSData *data, NSError *error) {
+                if (!error) {
+                    profileImage.image = [UIImage imageWithData:data];
+                    self.profileImage.layer.cornerRadius = self.profileImage.frame.size.height /2;
+                    self.profileImage.layer.masksToBounds = YES;
+                    self.profileImage.layer.borderWidth = 0;
+                }
+            }];
+        }
+    }];
 }
+
+#pragma mark - Keyboard Hide Action
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     
