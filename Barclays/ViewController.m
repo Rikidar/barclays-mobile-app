@@ -50,14 +50,6 @@
                                     }];
 }
 
-- (IBAction)authWithRegistration:(id)sender {
-    
-}
-
-- (IBAction)authWithRecovery:(id)sender {
-    
-}
-
 #pragma mark - Keyboard Hide Action
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {

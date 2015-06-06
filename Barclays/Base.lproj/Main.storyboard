@@ -141,7 +141,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="d0q-ZK-nCd" kind="show" id="IPa-yT-ctr"/>
+                                    <segue destination="5jZ-Zw-uiE" kind="show" id="1hg-ho-zBr"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="WAIT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N3R-I4-3UC">
@@ -334,9 +334,6 @@
                                 <state key="normal" title="Button" image="login_button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="authWithCredentials:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="sFP-WC-yp8"/>
-                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="header_bg" translatesAutoresizingMaskIntoConstraints="NO" id="VzT-aX-SZC">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="267"/>
@@ -361,7 +358,6 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="authWithRegistration:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="IS4-Cv-lbM"/>
                                     <segue destination="d0q-ZK-nCd" kind="show" id="yju-Qf-Obg"/>
                                 </connections>
                             </button>
@@ -707,9 +703,8 @@
         <image name="yosemite_bg" width="352" height="638"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="KdX-IX-3mj"/>
-        <segue reference="nDN-2F-4xy"/>
+        <segue reference="a4g-UT-7d9"/>
+        <segue reference="eaV-Ga-jgT"/>
         <segue reference="6aY-9B-nML"/>
-        <segue reference="yju-Qf-Obg"/>
     </inferredMetricsTieBreakers>
 </document>

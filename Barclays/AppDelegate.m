@@ -15,14 +15,25 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [Parse enableLocalDatastore];
     [Parse setApplicationId:@"bXmb6ToysYC2Tf0ET0LCIXibI8pZrVuLb61GqHyM"
                   clientKey:@"54ngrg4AFxNICo6tGNrkKpwWa9hlIjoOtaQMCfPL"];
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     
+    UIUserNotificationType userNotificationTypes = (UIUserNotificationTypeAlert | UIUserNotificationTypeBadge | UIUserNotificationTypeSound);
+    UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:userNotificationTypes  categories:nil];
+    [application registerUserNotificationSettings:settings];
+    [application registerForRemoteNotifications];
+    
     return YES;
+}
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    // Store the deviceToken in the current Installation and save it to Parse
+    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+    [currentInstallation setDeviceTokenFromData:deviceToken];
+    [currentInstallation saveInBackground];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

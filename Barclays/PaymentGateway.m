@@ -16,6 +16,7 @@
 @implementation PaymentGateway
 
 - (void)viewDidLoad {
+    [self authWithTouchID];
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
@@ -30,8 +31,19 @@
 }
 
 - (void)authWithTouchID {
-    PFUser *currentUser = [PFUser currentUser];
-    PFQuery *query = [PFQuery queryWithClassName:@"_Users"];
+    PFUser *user = [PFUser currentUser];
+    PFQuery *query = [PFQuery queryWithClassName:@"BCAccounts"];
+    [query whereKey:@"objectId" equalTo:user.objectId];
+    query.limit = 1;
+    
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error) {
+            if (objects.count > 0) {
+                PFObject *_user = [objects objectAtIndex:0];
+                _nameLabel.text = [_user objectForKey:@"displayName"];
+            }
+        }
+    }];
 }
 
 @end
