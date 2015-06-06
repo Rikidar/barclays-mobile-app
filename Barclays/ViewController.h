@@ -13,7 +13,5 @@
 @property (weak, nonatomic) IBOutlet UITextField *username;
 @property (weak, nonatomic) IBOutlet UITextField *password;
 
-@property (weak, nonatomic) IBOutlet UIButton *authWithCredentials;
-
 @end
 

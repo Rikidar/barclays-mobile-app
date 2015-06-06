@@ -20,7 +20,7 @@
     PFUser *currentUser = [PFUser currentUser];
     if (currentUser) {
         NSLog(@"Authorized access!");
-        [self performSegueWithIdentifier:@"customerAccount" sender:nil];
+        //[self performSegueWithIdentifier:@"customerAccount" sender:nil];
     } else {
         NSLog(@"Not authorized access!");
     }

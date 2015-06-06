@@ -27,19 +27,18 @@
 }
 
 - (void)showCustomerInformation {
-    PFUser *currentUser = [PFUser currentUser];
     PFQuery *query = [PFQuery queryWithClassName:@"_User"];
-    [query getObjectInBackgroundWithId:[PFUser currentUser] block:^(PFObject *customerEvent, NSError *error) {
-        self.firstName.text = customerEvent[@"firstName"];
-        self.lastName.text = customerEvent[@"lastName"];
-        NSLog(@"%@", customerEvent);
+    [query getObjectInBackgroundWithId:@"Y5glZCNJXS" block:^(PFObject *customerObject, NSError *error) {
+        self.firstName.text = customerObject[@"firstName"];
+        self.lastName.text = customerObject[@"lastName"];
+        NSLog(@"%@", customerObject);
     }];
 }
 
 #pragma mark - Show new UI controller
 
 - (IBAction)abooutScreen:(id)sender {
-
+    
 }
 
 @end
