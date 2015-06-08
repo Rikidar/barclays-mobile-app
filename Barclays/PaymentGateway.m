@@ -16,7 +16,7 @@
 @implementation PaymentGateway
 
 - (void)viewDidLoad {
-    [self authWithTouchID];
+    //[self authWithTouchID];
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
@@ -30,19 +30,13 @@
     
 }
 
-- (void)authWithTouchID {
-    PFUser *user = [PFUser currentUser];
-    PFQuery *query = [PFQuery queryWithClassName:@"BCAccounts"];
-    [query whereKey:@"objectId" equalTo:user.objectId];
-    query.limit = 1;
-    
-    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-        if (!error) {
-            if (objects.count > 0) {
-                PFObject *_user = [objects objectAtIndex:0];
-                _nameLabel.text = [_user objectForKey:@"displayName"];
-            }
-        }
+- (void)authWithTouchID {    
+    PFQuery *query = [PFQuery queryWithClassName:@"BCCreditCard"];
+    [query getObjectInBackgroundWithId:[query whereKey:@"creditCardPointer" equalTo:[PFUser currentUser].username] block:^(PFObject *creditCardTransfer, NSError *error) {
+        self.cardNumber.text = creditCardTransfer[@"creditCardNumber"];
+        self.cardHolder.text = creditCardTransfer[@"creditCardHolder"];
+        self.cardExpire.text = creditCardTransfer[@"creditCardExpire"];
+        NSLog(@"%@", creditCardTransfer);
     }];
 }
 

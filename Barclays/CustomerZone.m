@@ -47,7 +47,8 @@
     PFQuery *query = [PFQuery queryWithClassName:@"BCAccounts"];
     [query getObjectInBackgroundWithId:@"ogZnUZutzQ" block:^(PFObject *object, NSError *error) {
         NSLog(@"Retrieved data");
-        self.currentLocalBallance.text = object[@"BANumber"];
+        NSString *ballance = [@"£ %@", object[@"accountCredit"]];
+        self.currentLocalBallance.text = object[@"accountCredit"];
         if (!error) {
             PFFile *file = [object objectForKey:@"customerImage"];
             [file getDataInBackgroundWithBlock:^(NSData *data, NSError *error) {

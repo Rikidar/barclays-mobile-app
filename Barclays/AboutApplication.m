@@ -32,9 +32,9 @@
 
 - (void)currentSoftwareVersion {
     PFUser *currentUser = [PFUser currentUser];
-    PFQuery *query = [PFQuery queryWithClassName:@"BASoftware"];
-    [query getObjectInBackgroundWithId:@"XXXYYYZZZ" block:^(PFObject *customerEvent, NSError *error) {
-        self.softwareVersion.text = customerEvent[@"softwareVersion"];
+    PFQuery *query = [PFQuery queryWithClassName:@"BCSoftware"];
+    [query getObjectInBackgroundWithId:@"lTZvvgOSz4" block:^(PFObject *customerEvent, NSError *error) {
+        self.softwareVersion.text = customerEvent[@"softwareRevision"];
         NSLog(@"%@", customerEvent);
     }];
 }
