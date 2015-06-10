@@ -47,14 +47,14 @@
     PFQuery *query = [PFQuery queryWithClassName:@"BCAccounts"];
     [query getObjectInBackgroundWithId:@"ogZnUZutzQ" block:^(PFObject *object, NSError *error) {
         NSLog(@"Retrieved data");
-        NSString *ballance = [@"£ %@", object[@"accountCredit"]];
+        //NSString *ballance = [@"£ %@", object[@"accountCredit"]];
         self.currentLocalBallance.text = object[@"accountCredit"];
         if (!error) {
             PFFile *file = [object objectForKey:@"customerImage"];
             [file getDataInBackgroundWithBlock:^(NSData *data, NSError *error) {
                 if (!error) {
                     profileImage.image = [UIImage imageWithData:data];
-                    self.profileImage.layer.cornerRadius = self.profileImage.frame.size.height /2;
+                    self.profileImage.layer.cornerRadius = self.profileImage.frame.size.height/2;
                     self.profileImage.layer.masksToBounds = YES;
                     self.profileImage.layer.borderWidth = 0;
                 }

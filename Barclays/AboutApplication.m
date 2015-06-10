@@ -18,7 +18,7 @@
 @implementation AboutApplication
 
 - (void)viewDidLoad {
-    [self softwareVersion];
+    [self currentSoftwareVersion];
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }

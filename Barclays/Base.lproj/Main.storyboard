@@ -1,9 +1,50 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E26a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8121.17" systemVersion="14E26a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.14"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Avenir.ttc">
+            <string>Avenir-Book</string>
+            <string>Avenir-Book</string>
+            <string>Avenir-Book</string>
+            <string>Avenir-Book</string>
+            <string>Avenir-Book</string>
+            <string>Avenir-Book</string>
+            <string>Avenir-Book</string>
+            <string>Avenir-Book</string>
+            <string>Avenir-Book</string>
+            <string>Avenir-Book</string>
+            <string>Avenir-Book</string>
+            <string>Avenir-Book</string>
+            <string>Avenir-Book</string>
+            <string>Avenir-Heavy</string>
+            <string>Avenir-Heavy</string>
+            <string>Avenir-Book</string>
+            <string>Avenir-Light</string>
+            <string>Avenir-Book</string>
+            <string>Avenir-Book</string>
+            <string>Avenir-Book</string>
+            <string>Avenir-Book</string>
+            <string>Avenir-Light</string>
+            <string>Avenir-Light</string>
+            <string>Avenir-Book</string>
+            <string>Avenir-Book</string>
+            <string>Avenir-Book</string>
+            <string>Avenir-Book</string>
+            <string>Avenir-Book</string>
+            <string>Avenir-Light</string>
+            <string>Avenir-Light</string>
+            <string>Avenir-Light</string>
+            <string>Avenir-Book</string>
+            <string>Avenir-Book</string>
+        </mutableArray>
+        <mutableArray key="AvenirNext.ttc">
+            <string>AvenirNext-Medium</string>
+            <string>AvenirNext-Medium</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--Registration Console-->
         <scene sceneID="DME-Pd-Jgb">
@@ -168,72 +209,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rNd-RK-gXD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2162.5" y="388.5"/>
-        </scene>
-        <!--About Application-->
-        <scene sceneID="0LU-kA-jt6">
-            <objects>
-                <viewController id="O3C-sP-hn8" customClass="AboutApplication" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="pg8-Qv-eXY"/>
-                        <viewControllerLayoutGuide type="bottom" id="jyb-wJ-RX7"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="hul-kt-lt6">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="header_bg" translatesAutoresizingMaskIntoConstraints="NO" id="hgZ-tr-IKC">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="267"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="barclays_logo" translatesAutoresizingMaskIntoConstraints="NO" id="u6o-vQ-Hbc">
-                                <rect key="frame" x="137" y="196" width="100" height="100"/>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0nB-O6-raq">
-                                <rect key="frame" x="16" y="304" width="343" height="281"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Version:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wpX-1Y-3pm">
-                                <rect key="frame" x="102" y="593" width="61" height="21"/>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1.0.0 (1A382)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y9U-Uk-1Fk">
-                                <rect key="frame" x="171" y="593" width="101" height="24"/>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D9A-cQ-ia8">
-                                <rect key="frame" x="16" y="642" width="58" height="17"/>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
-                                <state key="normal" title="UPDATE">
-                                    <color key="titleColor" red="1" green="0.010051519910000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fTA-CY-d8T">
-                                <rect key="frame" x="301" y="642" width="58" height="17"/>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
-                                <state key="normal" title="CLOSE">
-                                    <color key="titleColor" red="1" green="0.010051519910000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <outlet property="softwareVersion" destination="Y9U-Uk-1Fk" id="8pG-ZP-4ms"/>
-                        <segue destination="11H-KU-ZXR" kind="show" id="waO-Zi-dY2"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sFH-yX-hRN" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2767.5" y="388.5"/>
         </scene>
         <!--Recovery Console-->
         <scene sceneID="Sb3-j2-IAY">
@@ -484,9 +459,6 @@
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="barclays" translatesAutoresizingMaskIntoConstraints="NO" id="k7w-WM-I2T">
-                                <rect key="frame" x="137" y="180" width="100" height="100"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wjy-TU-MjG">
                                 <rect key="frame" x="334" y="34" width="25" height="25"/>
                                 <state key="normal" image="logout_button">
@@ -497,13 +469,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Offer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eWQ-M4-ac1">
-                                <rect key="frame" x="16" y="122" width="343" height="55"/>
+                                <rect key="frame" x="16" y="134" width="343" height="55"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="49"/>
                                 <color key="textColor" red="0.97242277899999996" green="0.98654294050000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Jeremy" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QEL-0N-g1R">
-                                <rect key="frame" x="16" y="67" width="343" height="55"/>
+                                <rect key="frame" x="16" y="79" width="343" height="55"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="49"/>
                                 <color key="textColor" red="0.97242277899999996" green="0.98654294050000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -526,22 +498,56 @@
                                     <segue destination="5jZ-Zw-uiE" kind="show" id="eaV-Ga-jgT"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8bA-o3-8bi">
-                                <rect key="frame" x="80" y="333" width="46" height="30"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="jub-zR-ba2" kind="show" id="1CA-pk-qjU"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENx-iu-jAy">
-                                <rect key="frame" x="142" y="459" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENx-iu-jAy">
+                                <rect key="frame" x="15" y="445" width="335" height="62"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="36"/>
+                                <state key="normal" title="Payment Gateway">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="jIi-W3-bVf" kind="show" id="DIp-mT-F3l"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Profile Activity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FDd-RC-zgW">
+                                <rect key="frame" x="39" y="266" width="298" height="24"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="line" translatesAutoresizingMaskIntoConstraints="NO" id="BcD-N9-bP4">
+                                <rect key="frame" x="15" y="434" width="340" height="3"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdA-B8-dd7">
+                                <rect key="frame" x="16" y="515" width="335" height="62"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="36"/>
+                                <state key="normal" title="Show credit card">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="line" translatesAutoresizingMaskIntoConstraints="NO" id="q3b-JL-WFJ">
+                                <rect key="frame" x="15" y="515" width="336" height="2"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2QY-aI-w4e">
+                                <rect key="frame" x="20" y="585" width="335" height="62"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="36"/>
+                                <state key="normal" title="About software">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="bO8-Zj-Kjb" kind="show" id="2cR-Ba-Joz"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="line" translatesAutoresizingMaskIntoConstraints="NO" id="8g7-Gf-ouV">
+                                <rect key="frame" x="16" y="585" width="339" height="2"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8bA-o3-8bi">
+                                <rect key="frame" x="15" y="364" width="335" height="62"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="36"/>
+                                <state key="normal" title="Transaction History">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="jub-zR-ba2" kind="show" id="1CA-pk-qjU"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -556,6 +562,101 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RTD-0s-jHv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2162.5" y="-442.5"/>
+        </scene>
+        <!--About Application-->
+        <scene sceneID="bNt-M0-Ye5">
+            <objects>
+                <viewController id="bO8-Zj-Kjb" customClass="AboutApplication" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HHJ-wZ-94s"/>
+                        <viewControllerLayoutGuide type="bottom" id="1kd-jq-vL3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GGy-Sz-Qvd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="header_bg" translatesAutoresizingMaskIntoConstraints="NO" id="WPG-au-zXK">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="227"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WHC-Nt-OH3" customClass="CreditCa">
+                                <rect key="frame" x="16" y="34" width="25" height="25"/>
+                                <state key="normal" image="close_button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="11H-KU-ZXR" kind="show" id="n75-hm-uqK"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About software" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6K1-bF-ZET">
+                                <rect key="frame" x="64" y="71" width="246" height="50"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Version:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pAU-Zy-Owt">
+                                <rect key="frame" x="84" y="114" width="62" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sae-PV-1SX">
+                                <rect key="frame" x="154" y="114" width="137" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="G32-2K-QSF">
+                                <rect key="frame" x="20" y="261" width="335" height="386"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">Barclays set themselves the daunting task of recruiting 1,000,000 cardholders and 30,000 outlets by the launch date. A derelict shoe and boot factory in Northampton was converted in just two months into the main Barclaycard centre while £500,000 was spent on advertising and over 23 million forms were sent out to prospective customers. Barclays adapted the computer programme used by the Bank of America for its BankAmericard system, launched in 1958. One of the major problems faced by Barclays was overcoming the attitude that credit cards were “undesirable American influences.”
+
+ 1966 - The credit revolution Barclaycard: Innovations have continued apace
+A second major problem that threatened the success of Barclaycard was the widely held view that the credit card was an inflationary system that encouraged people to spend money they did not have. This led to questions being asked in Parliament. However, despite the magnitude of the task, all the targets were met and the UK’s first credit card was launched on time.
+
+Credit limits were set at £100 and £200. On 8 November 1967 Barclaycard became the first card to offer extended credit whereby cardholders could budget their payments monthly. Interest was charged at 1.5% per month on the balance left 25 days after the statement was issued. This mini overdraft facility was what the proponents of the inflationary argument had feared.
+
+Barclaycard was at first fully available in England, Wales and Scotland but 1967-68 saw expansion into Malta, Gibraltar and Ireland, and soon after into South Africa and the West Indies - all countries where the Bank had an established presence. However Barclaycard also increased its sphere of influence by making reciprocal arrangements with foreign banks. From the start there was an arrangement with Bank of America whereby Barclaycard was accepted by BankAmericard merchants and vice versa.
+
+Soon Barclaycard was welcome in almost every continent. Other facilities introduced by Barclaycard included cheque encashment of up £30 available to customers of all banks in the British Isles in 1969, credit limits being raised in 1971 and Barclaycard Masterloan, introduced in 1972.
+
+From the start Barclaycard made use of modern advertising techniques, including colour supplement ads, customer mailings and magazines. In 1968 an award-winning cinema film, 'Travelling Light' featured a woman with a card tucked into her bikini.
+
+1972 also saw the first television advertising of Barclaycard which may have contributed to the recruitment of the 2 millionth cardholder in Spring 1973. Also on 2 September 1974 Barclaycard became a dual-purpose card which could act as a cheque guarantee card.
+
+In April 1977, Barclaycard underwent a major transformation with the introduction of the new Visa network symbol and the relegation of the signature strip to the reverse of the card. The familiar blue, white and gold colour scheme was retained. 1977 also saw the re-launch of the Company Barclaycard. It had originally been launched in 1968 but was withdrawn in April 1975 due to a lack of interest. The new Company Barclaycard was more successful and following refinements in 1984 has continued to be so to this day.
+
+The 1980s saw the redesign of Barclaycard to include the dove hologram and other security features in an effort to combat fraud, the introduction of Barclaycard Profiles, a customer incentive and loyalty scheme and the launch in 1988 of the student Barclaycard. The 1980s also saw much greater use of television advertisements, beginning with a campaign featuring Dudley Moore, followed by another starring Alan Whicker promoting Barclaycard as the traveller’s card.
+
+In June 1990 Barclaycard appointed a new advertising agency, BMP DDB Needham which was responsible for the launch of the spoof spy commercials starring Rowan Atkinson. These highly successful adverts won several TV advertising awards. Barclaycard celebrated its 30th anniversary in June 1996 with the launch of a new design incorporating a spinning card logo.
+
+The continuing commitment to providing customers with better services resulted in innovations such as the smart card with a microchip to combat counterfeit fraud, a 24 hour one-stop travel shop, and Netlink. Introduced in 1995, Barclaycard Netlink was the first internet site to be launched by a UK financial services company enabling customers, among other services, to pay their utility bills through the internet. By 1997, improvements meant that customers could check their Barclaycard statements, credit limit and settle their bill on-line using a debit card.
+
+Meanwhile the 90s also saw the establishment of Barclaycard International, which led to direct expansion into several countries including Germany (1991), France (1998), Greece and Spain (1999), Botswana (2001), Italy (2002), Portugal and Egypt (2004). Barclaycard is now present in over 20 countries.
+
+During 2000 Barclaycard and Nomura launched a virtual shopping mall called IndigoSquare, which was replaced by Shopsmart in 2001, following Barclaycard’s acquisition of the site. The same year, Barclaycard announced the sponsorship of the FA Premier League in a £48 million deal, followed, a few months later, by a specially designed Premiership Barclaycard.
+
+2002 saw the start of Barclaycard Direct, providing mortgages, insurance and savings products, and of Nectar, a customer loyalty scheme in which customers could collect points through designated shops and services. In 2004 Barclaycard was completely re-branded, with actress Jennifer Anniston, and, later, comedian Jennifer Saunders starring in the accompanying television adverts. Sponsorship of the FA Premiership passed to Barclays after three successful years.
+
+August 2004 saw the acquisition of Juniper Financial Corporation, enabling Barclaycard to enter the US credit card market by purchasing one of North America's fastest growing issuers, and in 2008 Barclaycard bought the Goldfish credit card business. Further acquisitions came with the Italian credit card business of Citibank in 2010, followed by Egg’s UK personal customers and MBNA Europe’s small business portfolio in 2011.
+
+Innovations have proceeded apace in recent years. In 2007, Barclaycard Breathe, the UK’s first environmentally-friendly credit card was launched, along with Barclaycard OnePulse, the first contactless card in the UK. Based on a highly successful television advert, the Waterslide Extreme game became the most downloaded iPhone app in 57 countries in 2009, and in 2012, Barclaycard announced the launch of Barclaycard Paytag, offering customers the ability to pay with their mobile phone by sticking a Barclaycard Paytag to the back of their handset. </mutableString>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="barclays_logo" translatesAutoresizingMaskIntoConstraints="NO" id="Z8f-o8-hfa">
+                                <rect key="frame" x="137" y="153" width="100" height="100"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="softwareVersion" destination="sae-PV-1SX" id="zEq-Pe-vFd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uvU-sl-OSe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2639.5" y="-1252.5"/>
         </scene>
         <!--Transaction List-->
         <scene sceneID="ztz-b4-w6Y">
@@ -599,9 +700,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell tag="200" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="78" id="fGh-sK-7xE">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="22" width="375" height="78"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fGh-sK-7xE" id="xJi-Su-bYg">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="77.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="- £2619.59" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KaQ-sl-8OF">
@@ -703,6 +805,7 @@
         <image name="email_field" width="1304" height="200"/>
         <image name="green_bg" width="375" height="354"/>
         <image name="header_bg" width="1500" height="1040"/>
+        <image name="line" width="1956" height="6"/>
         <image name="login_button" width="1950" height="330"/>
         <image name="logout_button" width="80" height="84"/>
         <image name="mark_image" width="400" height="400"/>
@@ -716,8 +819,8 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="CNH-If-QpI"/>
-        <segue reference="1hg-ho-zBr"/>
         <segue reference="5LY-gW-s1s"/>
         <segue reference="a4g-UT-7d9"/>
+        <segue reference="1hg-ho-zBr"/>
     </inferredMetricsTieBreakers>
 </document>

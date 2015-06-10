@@ -166,7 +166,6 @@
 		6FE41CA41B205F2C00992E5A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6FE41CCF1B206D5C00992E5A /* New Group */,
 				6FE41CA51B205F2C00992E5A /* Info.plist */,
 				6FE41CA61B205F2C00992E5A /* main.m */,
 				6FE41CCD1B206A9A00992E5A /* AuthScreen.xcassets */,
@@ -189,13 +188,6 @@
 				6FE41CC21B205F2C00992E5A /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		6FE41CCF1B206D5C00992E5A /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "New Group";
 			sourceTree = "<group>";
 		};
 		6FE41CD01B2070D000992E5A /* Source Code */ = {

@@ -16,7 +16,7 @@
 @implementation PaymentGateway
 
 - (void)viewDidLoad {
-    //[self authWithTouchID];
+    [self authWithTouchID];
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
@@ -26,9 +26,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-+ (void)authWithNFCDevice {
-    
-}
+#pragma mark - Apple Pay
 
 - (void)authWithTouchID {    
     PFQuery *query = [PFQuery queryWithClassName:@"BCCreditCard"];
